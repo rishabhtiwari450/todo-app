@@ -1,0 +1,153 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #72FFB6, #10D164);
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #10a854;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+.submit-button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background: white;
+    color: #000;
+
+    border: 3px solid #000;
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000,
+        5px 5px 0 #000;
+}
+
+.submit-button:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    box-shadow: none;
+}
+
+
+.todo-item {
+    position: relative;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.todo-content {
+    padding-right: 35px;
+}
+
+.todo-content h2 {
+    margin: 0 0 8px;
+    font-size: 21px;
+}
+
+.todo-content p {
+    margin: 0 0 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+.todo-status {
+    width: 100%;
+    padding: 9px;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+
+.delete-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    padding: 5px;
+
+    background: transparent;
+    border: none;
+
+    color: #e63946;
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        margin: 25px auto;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Todo App</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Todo App</h1>
+
+        <form id="todoForm">
+
+            <div class="content-box">
+
+                <input type="text" id="title" placeholder="Enter Title">
+
+                <textarea id="content" placeholder="Enter Content"></textarea>
+
+                <select id="status">
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <button class="submit-button" type="submit">
+                    + Add
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <div id="todoList"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
